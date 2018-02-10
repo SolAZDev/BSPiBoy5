@@ -1,0 +1,206 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  color: #17b2ff;
+  background: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+tr {
+  height: 40px;
+}
+td {
+  padding: 10px 10px;
+}
+.DefaultObject {
+  position: absolute;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50%50%;
+}
+.container {
+  height: 100%;
+}
+.navbar-dark {
+  background: black;
+}
+.navbar-nav {
+  width: 100%;
+}
+.menuOption {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: #17b2ff;
+  transition: all 0.2s;
+}
+.menuOption:hover,
+.menuOption:active {
+  cursor: pointer;
+  outline: 2px solid;
+  background: rgba(23, 178, 255, 0.2);
+}
+.menuOption:focus {
+  outline: 1px solid #17b2ff;
+}
+.SubmenuOption {
+  padding: 0px 15px;
+  color: rgba(23, 178, 255, 0.6);
+}
+.SubmenuOption:hover,
+.SubmenuOption.active,
+.SubmenuOption:target {
+  color: #17b2ff;
+}
+.TMSelectedOption {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: #17b2ff;
+  transition: all 0.2s;
+  border: 1px solid #17b2ff;
+  border-top: none;
+  border-bottom: 2px solid #000;
+}
+.TMSelectedOption:hover,
+.TMSelectedOption:active {
+  cursor: pointer;
+  outline: 2px solid;
+  background: rgba(23, 178, 255, 0.2);
+}
+.TMSelectedOption:focus {
+  outline: 1px solid #17b2ff;
+}
+.TMSelectedOption:hover,
+.TMSelectedOption.active,
+.TMSelectedOption:focus {
+  outline: none;
+}
+.SMSelectedOption {
+  padding: 0px 15px;
+  color: rgba(23, 178, 255, 0.6);
+  border: 1px solid #17b2ff;
+  border-bottom: none;
+  border-top: 2px solid #000;
+}
+.SMSelectedOption:hover,
+.SMSelectedOption.active,
+.SMSelectedOption:target {
+  color: #17b2ff;
+}
+.bar {
+  display: inline-block;
+  position: absolute;
+  padding: 1px 1px 0;
+  transform-origin: 50%;
+  text-align: center;
+  border: 1px solid #0A0;
+  background-color: #0F0;
+  height: 8px;
+  width: 4%;
+}
+.progress {
+  background: #0A0;
+}
+.progressbar .bg-success {
+  background: #0F0;
+}
+.MainScreen {
+  width: 100%;
+  height: 90%;
+}
+#TopMenu {
+  border-bottom: 1px solid #17b2ff;
+}
+#TopMenu .navbar {
+  padding-bottom: 0px;
+}
+#TopMenu li {
+  text-align: center;
+  width: 20%;
+}
+#TopMenu a {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+#TopMenu .navbar-dark,
+#StatSub .navbar-dark,
+#InventorySub .navbar-dark,
+#DataScreen .navbar-dark {
+  background: black !important;
+  color: #17b2ff;
+}
+#TopMenu a,
+#StatSub a,
+#InventorySub a,
+#DataScreen a {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: #17b2ff;
+  transition: all 0.2s;
+}
+#TopMenu a:hover,
+#StatSub a:hover,
+#InventorySub a:hover,
+#DataScreen a:hover,
+#TopMenu a:active,
+#StatSub a:active,
+#InventorySub a:active,
+#DataScreen a:active {
+  cursor: pointer;
+  outline: 2px solid;
+  background: rgba(23, 178, 255, 0.2);
+}
+#TopMenu a:focus,
+#StatSub a:focus,
+#InventorySub a:focus,
+#DataScreen a:focus {
+  outline: 1px solid #17b2ff;
+}
+#StatSub,
+#InventorySub,
+#DataScreen {
+  padding-top: 0px !important;
+  padding-bottom: 0px;
+}
+#StatSub .navbar,
+#InventorySub .navbar,
+#DataScreen .navbar {
+  padding-top: 0px !important;
+}
+#StatSub a,
+#InventorySub a,
+#DataScreen a {
+  padding: 0px 15px;
+  color: rgba(23, 178, 255, 0.6);
+}
+#StatSub a:hover,
+#InventorySub a:hover,
+#DataScreen a:hover,
+#StatSub a.active,
+#InventorySub a.active,
+#DataScreen a.active,
+#StatSub a:target,
+#InventorySub a:target,
+#DataScreen a:target {
+  color: #17b2ff;
+}
+#StatsScreen {
+  height: 100%;
+}
+#StatusScreen {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+#StatusScreen .container {
+  margin: auto;
+}

@@ -1,0 +1,166 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+@PipText: #17b2ff;
+@dark-gradient: #025A86;
+@light-gradient: #0075b0;
+@BarBG: #0A0;
+@BarFil: #0F0;
+@transparent: rgba(0,0,0,0);
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+    color: @PipText;
+    background: black;
+    font-family:  Helvetica, sans-serif;
+	font-size: 12pt;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+tr{
+	height: 40px;
+}
+td{
+	padding: 10px 10px;
+}
+
+
+/// Classes ///
+
+.DefaultObject{
+	position: absolute;
+	-ms-transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	transform-origin:50%50%;
+}
+.container{
+	height: 100%;
+}
+.navbar-dark{
+    background: black;
+}
+.navbar-nav{
+	width: 100%;
+}
+.navbar-link{}
+.menuOption{
+	padding-bottom: 0px;
+	padding-top: 0px;
+	color: @PipText;
+	transition: all 0.2s;
+	&:hover, &:active{
+		cursor: pointer;
+		outline: 2px solid;
+		background: fade(@PipText, 20%);
+	}
+	&:focus{
+		outline: 1px solid @PipText;
+	}
+}
+
+.SubmenuOption{
+	padding: 0px 15px;
+	color: fade(@PipText, 60%);
+	&:hover, &.active, &:target{
+		color: @PipText;
+	}
+}
+
+.TMSelectedOption{
+	.menuOption;
+	border: 1px solid @PipText;
+	border-top: none;
+	border-bottom: 2px solid #000;
+	&:hover, &.active, &:focus{
+		outline: none;
+	}
+}
+
+.SMSelectedOption{
+	.SubmenuOption;
+	border: 1px solid @PipText;
+	border-bottom: none;
+	border-top: 2px solid #000;
+}
+
+.bar{
+	display: inline-block;
+	position:absolute;
+	padding:1px 1px 0;
+	transform-origin: 50%;
+	text-align: center;
+	border: 1px solid @BarBG;
+	background-color: @BarFil;
+	height:8px;
+	width:4%;
+}
+
+.progress{
+	background: @BarBG;
+}
+.progressbar .bg-success{
+	background: @BarFil;
+}
+
+.MainScreen{
+	width:100%;
+	height: 90%;
+}
+/// Sections ///
+#TopMenu{
+	border-bottom: 1px solid @PipText;
+	.navbar{
+		padding-bottom: 0px;
+	}
+	li{
+		text-align: center;
+		width: 20%;
+	}
+	a{
+		text-align: center;
+		width: 40%;
+		margin:  0 auto;
+	}
+
+}
+
+#TopMenu, #StatSub, #InventorySub, #DataScreen{
+    .navbar-dark{
+	background: black !important;
+	color: @PipText;
+	}
+	a{
+		.menuOption;
+	}
+}
+#StatSub, #InventorySub, #DataScreen{
+	padding-top: 0px !important;
+	padding-bottom: 0px;
+	.navbar{
+		padding-top: 0px !important;
+	}
+	a{
+		.SubmenuOption;
+	}
+}
+#StatsScreen{
+	height: 100%;
+}
+
+#StatusScreen{
+	.container{
+		margin:auto;
+	}
+	display: flex;
+	align-items: center;
+	margin:auto;
+	margin-bottom: auto;
+	margin-top: auto;
+
+}
+
+
+
