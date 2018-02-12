@@ -11,8 +11,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-  
-    <nav id="TopMenu" class="TopScreen">
+  <div class="fixed-top">
+    <nav id="TopMenu" class="TopScreen">  
       <div class="navbar navbar-expand-sm navbar-dark">
         <ul class="navbar-nav">
           <li id="StatsBtn" class="nav-item"> <a class="nav-link">STATS</a></li>
@@ -22,54 +22,98 @@
           <li id="RadioBtn" class="nav-item"> <a class="nav-link">RADIO</a></li>
         </ul>
       </nav>
-
+      <nav id="StatSub" class="submenu navbar navbar-expand-sm navbar-dark">
+        <ul class="navbar-nav">
+          <li id="StsPgBtn" class="nav-item"><a class="nav-link">STATS</a></li>
+          <li id="SpecsBtn" class="nav-item"><a class="nav-link">SPECIAL</a></li>
+          <li id="PerksBtn" class="nav-item"><a class="nav-link">PERKS</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="MainScreen">
-      <div id="StatsScreen">
-          <nav id="StatSub" class="navbar navbar-expand-sm navbar-dark">
-            <ul class="navbar-nav">
-              <li id="StatsBt2" class="nav-item"><a class="nav-link">STATS</a></li>
-              <li id="SpecsBtn" class="nav-item"><a class="nav-link">SPECIAL</a></li>
-              <li id="PerksBtn" class="nav-item"><a class="nav-link">PERKS</a></li>
-            </ul>
-          </nav>
-          <div id="StatusScreen" style="height:100%;">
-            <div class="container" style="width:100%; height:100%">
-              <div class=""></div>
-              <span class="bar"></span>
-              <span class="bar" style="margin-left:-10%;"></span>
-              <span class="bar" style="margin-left: 10%;"></span>
-              <div style="padding-bottom:10px;"></div>
-              <img src="img/ICONS/STATS/STATUS/vaultboy.png" alt="" style="margin-left:-1%">
-              <div style="padding-bottom:-5px;"></div>
-              <span class="bar"></span>
-              <span class="bar" style="margin-left:-10%;"></span>
-              <span class="bar" style="margin-left: 10%;"></span>
-              .
+      <div id="StatsScreen" style="height:100%;">
+          <div id="StatusScreen" class="d-flex h-100">
+            <div class="container">
+              <div id="vbrow" class="row align-items-center">
+                <div class="col-sm-3">
+                  <div class="row">
+                    <div class="col-sm-8 PipItemBG" style="margin-left: -5px;">
+                        <div style="height:40%;"></div>
+                        <img class="mx-auto d-block" src="img/ICONS/STATS/STATUS/weapon icon.png" alt="">
+                    </div>
+                    <div class="col-sm-4 PipItemBG " style="margin-left: 1px; text-align: center;height:120px;">
+                      <div style="height:30%;"></div>
+                      <img class="mx-auto d-blocks" src="img/ICONS/STATS/STATUS/crosshair icon.png" alt=""><br />
+                      <div style="height:20%;">&#160;</div>
+                      180
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                  <span class="bar" style="margin-top: -8%;left:42.5%"></span>
+                  <span class="bar" style="margin-left:-45%;margin-top:10%"></span>
+                  <span class="bar" style="margin-left: 45%;margin-top:10%"></span>
+                  <img class="mx-auto d-block" id="vaultboy" src="img/ICONS/STATS/STATUS/vaultboy.png" alt="">
+                  <span class="bar" style="margin-left:-45%;margin-top:-20%"></span>
+                  <span class="bar" style="margin-left: 45%;margin-top:-20%"></span>
+                  <span class="bar" style="margin-top: 4%;left:42.5%"></span>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                  <div class="row">
+                    <div class="col-sm-12 PipItemBG" style="height:60px;">
+                      <div style="height:20%;"></div>
+                      <img   class="mx-auto d-block align-items-center" src="img/ICONS/STATS/STATUS/armor icon.png" alt="">
+                    </div>
+                  </div>
+                    <div class="row" style="margin-top: 5px;">
+                    <div class="col-sm-4 PipItemBG" style="border: 1px ;text-align: center;padding-left: 10%;padding-top: 5%;">
+                      <img class="mx-auto d-block" src="img/ICONS/STATS/STATUS/dam icon.png" alt="">
+                      <div style="height:5px;"></div>
+                      13
+                    </div>
+                    <div class="col-sm-4 PipItemBG" style="text-align: center;padding-left: 10%;padding-top: 2.5%;">
+                      <img class="mx-auto d-block" src="img/ICONS/STATS/STATUS/tec icon.png" alt="">
+                      <div style="height:5px;"></div>
+                      18
+                    </div>
+                    <div class="col-sm-4 PipItemBG" style="text-align: center;padding-left: 10%;padding-top: 6%;">
+                      <img class="mx-auto d-block" src="img/ICONS/STATS/STATUS/rad icon.png" alt="">
+                      <div style="height:5px;"></div>
+                      11
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div  id="Bottom" class="fixed-bottom">
+                <div class="row">
+                  <div class="col-sm-2" style="padding: 0px;">
+                    <div class="row">
+                      <div class="col-4" style="padding: 0px;">HP</div>
+                      <div id="BatNum" class="col-4" style="padding: 0 2px; margin: 0 auto;">100</div>
+                      <div class="col-4" style="padding: 0px; margin: 0 auto;">/ 100</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-7">
+                    <div style="height: 25%;"></div>
+                    <div class="progress">
+                      <div id="BatBar" class="progress-bar" style="width:50%;"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2" style="padding: 0px;">
+                    <div class="row">
+                      <div class="col-4" style="padding: 0px;">AP</div>
+                      <div id="BatNum" class="col-4" style="padding: 0 2px; margin: 0 auto;">100</div>
+                      <div class="col-4" style="padding: 0px; margin: 0 auto;">/ 100</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-     <!-- <div id="InventoryScreen">
-        <nav id="InventorySub" class="navbar navbar-expand-sm navbar-dark">
-          <ul class="navbar-nav">
-            <li id="WpnBtn" class="nav-item"> <a class="nav-link">WEAPON</a></li>
-            <li id="ArmBtn" class="nav-item"><a class="nav-link">APPAREL</a></li>
-            <li id="AidBtn" class="nav-item"><a class="nav-link">AID</a></li>
-            <li id="MscBtn" class="nav-item"><a class="nav-link">MISC</a></li>
-            <li id="JnkBtn" class="nav-item"><a class="nav-link">JUNK</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div id="DataScreen">
-        <nav id="DataSub" class="navbar navbar-expand-sm navbar-dark">
-          <ul class="navbar-nav">
-            <li id="CalBtn" class="nav-item"> <a class="nav-link">CALENDAR</a></li>
-            <li id="ConBtn" class="nav-item"><a class="nav-link">CONTACTS</a></li>
-            <li id="AbtBtn" class="nav-item"><a class="nav-link">ABOUT</a></li>
-            <li id="CfgBtn" class="nav-item"><a class="nav-link">CONFIG</a></li>
-          </ul>
-        </nav>
-      </div>
+        </div>
+        <!--
       <div id="MapScreen"></div>
       <div id="RadioScreen"></div>-->
     </div>

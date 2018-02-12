@@ -8,8 +8,6 @@ body {
   background: black;
   font-family: Helvetica, sans-serif;
   font-size: 12pt;
-  margin: auto;
-  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -18,12 +16,6 @@ tr {
 }
 td {
   padding: 10px 10px;
-}
-.DefaultObject {
-  position: absolute;
-  -ms-transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50%50%;
 }
 .container {
   height: 100%;
@@ -34,6 +26,12 @@ td {
 .navbar-nav {
   width: 100%;
 }
+.PipItemBG {
+  background: rgba(23, 178, 255, 0.2);
+}
+.submenu {
+  background: none;
+}
 .menuOption {
   padding-bottom: 0px;
   padding-top: 0px;
@@ -43,7 +41,7 @@ td {
 .menuOption:hover,
 .menuOption:active {
   cursor: pointer;
-  outline: 2px solid;
+  outline: 1px solid #17b2ff;
   background: rgba(23, 178, 255, 0.2);
 }
 .menuOption:focus {
@@ -57,6 +55,9 @@ td {
 .SubmenuOption.active,
 .SubmenuOption:target {
   color: #17b2ff;
+  outline: none;
+  border: 1px solid #17b2ff;
+  border-top: none;
 }
 .TMSelectedOption {
   padding-bottom: 0px;
@@ -70,7 +71,7 @@ td {
 .TMSelectedOption:hover,
 .TMSelectedOption:active {
   cursor: pointer;
-  outline: 2px solid;
+  outline: 1px solid #17b2ff;
   background: rgba(23, 178, 255, 0.2);
 }
 .TMSelectedOption:focus {
@@ -92,6 +93,9 @@ td {
 .SMSelectedOption.active,
 .SMSelectedOption:target {
   color: #17b2ff;
+  outline: none;
+  border: 1px solid #17b2ff;
+  border-top: none;
 }
 .bar {
   display: inline-block;
@@ -99,16 +103,23 @@ td {
   padding: 1px 1px 0;
   transform-origin: 50%;
   text-align: center;
-  border: 1px solid #0A0;
+  border: 2px solid #0A0;
   background-color: #0F0;
   height: 8px;
-  width: 4%;
+  width: 25%;
+  left: 40%;
 }
-.progress {
-  background: #0A0;
+.pIcon {
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
-.progressbar .bg-success {
-  background: #0F0;
+.pStatIcon {
+  background: rgba(23, 178, 255, 0.2);
+}
+.bg-success {
+  background: #0F0 !important;
+  border: 1px solid #0A0;
 }
 .MainScreen {
   width: 100%;
@@ -118,6 +129,7 @@ td {
   border-bottom: 1px solid #17b2ff;
 }
 #TopMenu .navbar {
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 #TopMenu li {
@@ -144,6 +156,7 @@ td {
   padding-top: 0px;
   color: #17b2ff;
   transition: all 0.2s;
+  border-bottom: none;
 }
 #TopMenu a:hover,
 #StatSub a:hover,
@@ -154,7 +167,7 @@ td {
 #InventorySub a:active,
 #DataScreen a:active {
   cursor: pointer;
-  outline: 2px solid;
+  outline: 1px solid #17b2ff;
   background: rgba(23, 178, 255, 0.2);
 }
 #TopMenu a:focus,
@@ -166,6 +179,7 @@ td {
 #StatSub,
 #InventorySub,
 #DataScreen {
+  border-top: none;
   padding-top: 0px !important;
   padding-bottom: 0px;
 }
@@ -177,8 +191,10 @@ td {
 #StatSub a,
 #InventorySub a,
 #DataScreen a {
+  position: relative;
   padding: 0px 15px;
   color: rgba(23, 178, 255, 0.6);
+  border-top: none;
 }
 #StatSub a:hover,
 #InventorySub a:hover,
@@ -190,17 +206,43 @@ td {
 #InventorySub a:target,
 #DataScreen a:target {
   color: #17b2ff;
-}
-#StatsScreen {
-  height: 100%;
-}
-#StatusScreen {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  margin-bottom: auto;
-  margin-top: auto;
+  outline: none;
+  border: 1px solid #17b2ff;
+  border-top: none;
 }
 #StatusScreen .container {
+  padding-top: 8%;
+}
+#StatusScreen #Bottom .row {
   margin: auto;
+  width: 90%;
+  padding: 0px;
+}
+#StatusScreen #Bottom .col-sm-7 {
+  background: rgba(23, 178, 255, 0.2);
+  padding: 0 5px;
+  border: 1px solid rgba(23, 178, 255, 0.4);
+  border-bottom: none;
+}
+#StatusScreen #Bottom .col-sm-7 .progress {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 170, 0, 0.6);
+}
+#StatusScreen #Bottom .col-sm-7 .progress-bar {
+  background: #0F0 !important;
+}
+#StatusScreen #Bottom .col-sm-2 {
+  background: rgba(23, 178, 255, 0.2);
+  border: 1px solid rgba(23, 178, 255, 0.4);
+  border-bottom: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#vaultboy {
+  width: 210px;
+  height: 240px;
+}
+#vbrow {
+  height: 100%;
 }

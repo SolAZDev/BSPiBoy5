@@ -15,8 +15,6 @@ body{
     background: black;
     font-family:  Helvetica, sans-serif;
 	font-size: 12pt;
-	margin: auto;
-	text-align: center;
 	width: 100%;
 	height: 100%;
 }
@@ -29,13 +27,6 @@ td{
 
 
 /// Classes ///
-
-.DefaultObject{
-	position: absolute;
-	-ms-transform-origin:50% 50%;
-	-webkit-transform-origin:50% 50%;
-	transform-origin:50%50%;
-}
 .container{
 	height: 100%;
 }
@@ -45,7 +36,14 @@ td{
 .navbar-nav{
 	width: 100%;
 }
-.navbar-link{}
+.PipItemBG{
+	background: fade(@PipText, 20%);
+	
+}
+.submenu{
+	background: none;
+}
+
 .menuOption{
 	padding-bottom: 0px;
 	padding-top: 0px;
@@ -53,7 +51,7 @@ td{
 	transition: all 0.2s;
 	&:hover, &:active{
 		cursor: pointer;
-		outline: 2px solid;
+		outline: 1px solid @PipText;
 		background: fade(@PipText, 20%);
 	}
 	&:focus{
@@ -66,7 +64,11 @@ td{
 	color: fade(@PipText, 60%);
 	&:hover, &.active, &:target{
 		color: @PipText;
+		outline: none; //This is a workaround.
+		border: 1px solid @PipText;
+		border-top: none;
 	}
+
 }
 
 .TMSelectedOption{
@@ -92,17 +94,23 @@ td{
 	padding:1px 1px 0;
 	transform-origin: 50%;
 	text-align: center;
-	border: 1px solid @BarBG;
+	border: 2px solid @BarBG;
 	background-color: @BarFil;
 	height:8px;
-	width:4%;
+	width:25%;
+	left: 40%;
 }
-
-.progress{
-	background: @BarBG;
+.pIcon{
+	position: absolute;
+	top: 25%;
+	left: 25%;
 }
-.progressbar .bg-success{
-	background: @BarFil;
+.pStatIcon{
+	.PipItemBG;
+}
+.bg-success{
+	background: @BarFil !important;
+	border: 1px solid @BarBG;
 }
 
 .MainScreen{
@@ -113,6 +121,7 @@ td{
 #TopMenu{
 	border-bottom: 1px solid @PipText;
 	.navbar{
+		padding-top: 0px;
 		padding-bottom: 0px;
 	}
 	li{
@@ -134,33 +143,67 @@ td{
 	}
 	a{
 		.menuOption;
+		border-bottom: none;
 	}
 }
 #StatSub, #InventorySub, #DataScreen{
+	border-top: none;
 	padding-top: 0px !important;
 	padding-bottom: 0px;
 	.navbar{
 		padding-top: 0px !important;
 	}
 	a{
+		position: relative;
 		.SubmenuOption;
+		border-top: none;
 	}
 }
-#StatsScreen{
-	height: 100%;
-}
-
 #StatusScreen{
 	.container{
-		margin:auto;
+		padding-top: 8%;
 	}
-	display: flex;
-	align-items: center;
-	margin:auto;
-	margin-bottom: auto;
-	margin-top: auto;
-
+	#Bottom{
+		.row{
+			margin: auto;
+			width: 90%;
+			padding: 0px;
+			}
+			.col-sm-7{
+				.PipItemBG;
+				padding: 0 5px;
+				border: 1px solid fade(@PipText, 40%);
+				border-bottom: none;
+				.progress{
+					width: 100%;
+					height: 50%;
+					background-color: fade(@BarBG, 60%);
+				}
+				.progress-bar{
+					background: @BarFil !important;
+				}
+			}
+			.col-sm-2{
+				.PipItemBG;
+				border: 1px solid fade(@PipText, 40%);
+				border-bottom: none;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+		}
+		
+	}
+#StatusScreen{
+	//height: 97%;
 }
 
+#vaultboy{
+	width: 210px;
+	height: 240px;
+}
 
+#vbrow {
+	
+	height: 100%;
+}
 
