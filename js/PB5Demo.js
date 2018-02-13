@@ -1,5 +1,5 @@
 /// VARIABLE ZONE ///
-var specialJson = "https://raw.githubusercontent.com/SolAZDev/BSPiBoy5/master/js/special.json";
+var specialJson = "https://raw.githubusercontent.com/SolAZDev/BSPiBoy5/master/js/PipBoyDemo.json";
 
 $(document).ready(function () {
     StartUp(1, 1);
@@ -122,7 +122,7 @@ function StartUp(Main, Sub) {
 
 function TestJSON() {
     $.getJSON(specialJson, function (data) {
-        $.each(data, function (key, val) {
+        $.each(data.SPECIAL, function (key, val) {
             console.log(val.name + " " + val.value);
         });
     });
