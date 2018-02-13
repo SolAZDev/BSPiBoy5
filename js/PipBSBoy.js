@@ -122,29 +122,29 @@ function StartUp(Main, Sub) {
 }
 
 function TestJSON() {
-    $.getJSON((DefainedJSON==""?PBJSon:DefainedJSON), function (data) {
-        $.each(data.SPECIAL, function (key, val) {
+    $.getJSON(PBJSon, function (data) {
+        $.each(data.PIPBOY.SPECIAL, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.PERKS, function (key, val) {
+        $.each(data.PIPBOY.PERKS, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.WEAPONS, function (key, val) {
+        $.each(data.PIPBOY.WEAPONS, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.APPAREL, function (key, val) {
+        $.each(data.PIPBOY.APPAREL, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.AID, function (key, val) {
+        $.each(data.PIPBOY.AID, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.MISC, function (key, val) {
+        $.each(data.PIPBOY.MISC, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.JUNK, function (key, val) {
+        $.each(data.PIPBOY.JUNK, function (key, val) {
             console.log(val.name + " " + val.value);
         });
-        $.each(data.RADIO, function (key, val) {
+        $.each(data.PIPBOY.RADIO, function (key, val) {
             console.log(val.name + " " + val.url);
         });
     });
