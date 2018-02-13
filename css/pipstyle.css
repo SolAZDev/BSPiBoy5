@@ -44,9 +44,6 @@ td {
   outline: 1px solid #17b2ff;
   background: rgba(23, 178, 255, 0.2);
 }
-.menuOption:focus {
-  outline: 1px solid #17b2ff;
-}
 .SubmenuOption {
   padding: 0px 15px;
   color: rgba(23, 178, 255, 0.6);
@@ -73,9 +70,6 @@ td {
   cursor: pointer;
   outline: 1px solid #17b2ff;
   background: rgba(23, 178, 255, 0.2);
-}
-.TMSelectedOption:focus {
-  outline: 1px solid #17b2ff;
 }
 .TMSelectedOption:hover,
 .TMSelectedOption.active,
@@ -125,6 +119,29 @@ td {
   width: 100%;
   height: 90%;
 }
+.StatItemButton {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: #17b2ff;
+  transition: all 0.2s;
+  border: none;
+  background: rgba(23, 178, 255, 0.5);
+  color: black;
+  padding: 2px 20px;
+  list-style-type: none;
+  width: 100%;
+}
+.StatItemButton:hover,
+.StatItemButton:active {
+  cursor: pointer;
+  outline: 1px solid #17b2ff;
+  background: rgba(23, 178, 255, 0.2);
+}
+.StatItemButton:hover,
+.StatItemButton:active {
+  outline: 0px;
+  background: rgba(23, 178, 255, 0.8);
+}
 #TopMenu {
   border-bottom: 1px solid #17b2ff;
 }
@@ -169,12 +186,6 @@ td {
   cursor: pointer;
   outline: 1px solid #17b2ff;
   background: rgba(23, 178, 255, 0.2);
-}
-#TopMenu a:focus,
-#StatSub a:focus,
-#InventorySub a:focus,
-#DataScreen a:focus {
-  outline: 1px solid #17b2ff;
 }
 #StatSub,
 #InventorySub,
@@ -245,4 +256,7 @@ td {
 }
 #vbrow {
   height: 100%;
+}
+#SpecsScreen #SpecialTable table {
+  width: 100%;
 }

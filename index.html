@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/pipstyle.css ">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/PipBSBoy.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -15,23 +16,23 @@
     <nav id="TopMenu" class="TopScreen">  
       <div class="navbar navbar-expand-sm navbar-dark">
         <ul class="navbar-nav">
-          <li id="StatsBtn" class="nav-item"> <a class="nav-link">STATS</a></li>
-          <li id="InvenBtn" class="nav-item"> <a class="nav-link">INV</a></li>
-          <li id="DataBtn"  class="nav-item"> <a class="nav-link">DATA</a></li>
-          <li id="GMapsBtn" class="nav-item"> <a class="nav-link">MAP</a></li>
-          <li id="RadioBtn" class="nav-item"> <a class="nav-link">RADIO</a></li>
+          <li id="StatBtn" class="nav-item" onclick="StartUp(1,1);"> <a class="nav-link">STATS</a></li>
+          <li id="InvnBtn" class="nav-item" onclick="StartUp(2,1);"> <a class="nav-link">INV</a></li>
+          <li id="DataBtn"  class="nav-item" onclick="StartUp(3,1);"> <a class="nav-link">DATA</a></li>
+          <li id="MapsBtn" class="nav-item" onclick="StartUp(4);"  > <a class="nav-link">MAP</a></li>
+          <li id="RadiBtn" class="nav-item" onclick="StartUp(5);"  > <a class="nav-link">RADIO</a></li>
         </ul>
       </nav>
       <nav id="StatSub" class="submenu navbar navbar-expand-sm navbar-dark">
         <ul class="navbar-nav">
-          <li id="StsPgBtn" class="nav-item"><a class="nav-link">STATS</a></li>
-          <li id="SpecsBtn" class="nav-item"><a class="nav-link">SPECIAL</a></li>
-          <li id="PerksBtn" class="nav-item"><a class="nav-link">PERKS</a></li>
+          <li id="StsPgBtn" class="nav-item" onclick="StartUp(1,1);"><a class="nav-link">STATS</a></li>
+          <li id="SpecsBtn" class="nav-item" onclick="StartUp(1,2);"><a class="nav-link">SPECIAL</a></li>
+          <li id="PerksBtn" class="nav-item" onclick="StartUp(1,3);"><a class="nav-link">PERKS</a></li>
         </ul>
       </nav>
     </div>
     <div class="MainScreen">
-      <div id="StatsScreen" style="height:100%;">
+      <div id="StatScreen" style="height:100%;">
           <div id="StatusScreen" class="d-flex h-100">
             <div class="container">
               <div id="vbrow" class="row align-items-center">
@@ -109,6 +110,18 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div id="SpecsScreen">
+            <div class="container-fluid">
+              <div class="row">
+                <div id="SpecialTable" class="col-sm-6">
+                  <table>
+                    <tr onclick="ShowSpec(1)" class="StatItemButton"><td>Strenght</td><td>7</td></tr>
+                  </table>
+                </div>
+                <div class="col-sm-6" style="background: white;">AEEyyy</div>
               </div>
             </div>
           </div>

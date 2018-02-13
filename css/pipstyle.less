@@ -54,9 +54,6 @@ td{
 		outline: 1px solid @PipText;
 		background: fade(@PipText, 20%);
 	}
-	&:focus{
-		outline: 1px solid @PipText;
-	}
 }
 
 .SubmenuOption{
@@ -116,6 +113,20 @@ td{
 .MainScreen{
 	width:100%;
 	height: 90%;
+}
+
+.StatItemButton{
+	.menuOption;
+	border: none;
+	background: fade(@PipText, 50%);
+	color: black;
+	padding: 2px 20px;
+	list-style-type: none;
+	width: 100%;
+	&:hover, &:active{
+		outline: 0px;
+		background: fade(@PipText, 80%);
+	}
 }
 /// Sections ///
 #TopMenu{
@@ -191,7 +202,6 @@ td{
 				margin-right: 5px;
 			}
 		}
-		
 	}
 #StatusScreen{
 	//height: 97%;
@@ -203,7 +213,13 @@ td{
 }
 
 #vbrow {
-	
 	height: 100%;
 }
 
+#SpecsScreen{
+	#SpecialTable{
+		table{
+			width: 100%;
+		}
+	}
+}
