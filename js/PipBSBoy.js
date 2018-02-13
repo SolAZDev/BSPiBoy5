@@ -1,5 +1,5 @@
 /// VARIABLE ZONE ///
-var specialJson = "http://solazdev.github.io/BSPiBoy5/js/special.json";
+var specialJson = "https://raw.githubusercontent.com/SolAZDev/BSPiBoy5/master/js/special.json";
 
 $(document).ready(function () {
     StartUp(1, 1);
