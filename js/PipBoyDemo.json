@@ -1,47 +1,141 @@
 {
-  "SPECIAL" : [
+  "PIPBOY" : {
+    "SPECIAL" : [
+      {
+        "name": "Strength",
+        "value": "8",
+        "icon": "img/ICONS/STATS/SPECIAL/S.png",
+        "desc": "How much power do you weild? Just how strong are you?!"
+      },
+      {
+        "name": "Perception",
+        "value": "7",
+        "icon": "img/ICONS/STATS/SPECIAL/P.png",
+        "desc": "Your scouting instincts makes you more aware of your surroundings"
+      },
+      {
+        "name": "Endurance",
+        "value": "10",
+        "icon": "img/ICONS/STATS/SPECIAL/E.png",
+        "desc": "'You're a wall' -Red Man"
+      },
+      {
+        "name": "Charisma",
+        "value": "6",
+        "icon": "img/ICONS/STATS/SPECIAL/C.png",
+        "desc": "Normally, your charisma is calculated by confidence, and social standards"
+      },
     {
-      "name": "Strength",
-      "value": "8",
-      "icon": "img/ICONS/SPECIAL/S.png",
-      "desc": "How much power do you weild? Just how strong are you?!"
-    },
-    {
-      "name": "Perception",
-      "value": "7",
-      "icon": "img/ICONS/SPECIAL/P.png",
-      "desc": "Your scouting instincts makes you more aware of your surroundings"
-    },
-    {
-      "name": "Endurance",
-      "value": "10",
-      "icon": "img/ICONS/SPECIAL/E.png",
-      "desc": "'You're a wall' -Red Man"
-    },
-    {
-      "name": "Charisma",
-      "value": "6",
-      "icon": "img/ICONS/SPECIAL/C.png",
-      "desc": "Normally, your charisma is calculated by confidence, and social standards"
-    },
-  {
-      "name": "Intelligence",
-      "value": "8",
-      "icon": "img/ICONS/SPECIAL/I.png",
-      "desc": "Well, how clever can you be?"
-    },
-    {
-      "name": "Perception",
-      "value": "7",
-      "icon": "img/ICONS/SPECIAL/A.png",
-      "desc": "How quick are your freflexes? Do you even?"
-    },
-    {
-      "name": "Luck",
-      "value": "7",
-      "icon": "img/ICONS/SPECIAL/L.png",
-      "desc": "On a scale of 1-10, how much of a lucky bugger are you?"
-    }
-  ]
-  
+        "name": "Intelligence",
+        "value": "8",
+        "icon": "img/ICONS/STATS/SPECIAL/I.png",
+        "desc": "Well, how clever can you be?"
+      },
+      {
+        "name": "Perception",
+        "value": "7",
+        "icon": "img/ICONS/STATS/SPECIAL/A.png",
+        "desc": "How quick are your freflexes? Do you even?"
+      },
+      {
+        "name": "Luck",
+        "value": "7",
+        "icon": "img/ICONS/STATS/SPECIAL/L.png",
+        "desc": "On a scale of 1-10, how much of a lucky bugger are you?"
+      }
+    ],
+    "PERKS" : [
+      {
+        "name": "Coder",
+        "value": "8",
+        "icon": "img/ICONS/STATS/PERKS/programming perk.png",
+        "desc": "You ar able to understand some of this code, if not write it."
+      },
+      {
+        "name": "Crafter",
+        "value": "7",
+        "icon": "img/ICONS/STATS/PERKS/ccrafting perk.png",
+        "desc": "You enjoy making things and sometimes tinkering"
+      },
+      {
+        "name": "Linux Master Race",
+        "value": "10",
+        "icon": "img/ICONS/STATS/PERKS/linux master race perk.png",
+        "desc": "You know the best operting system."
+      }
+    ],
+    "WEAPONS" : [
+      {
+        "name": "Solrac's Shotgun",
+        "value": "256",
+        "weight" : "10",
+        "effect" : "75",
+        "icon": "img/ICONS/INV/WEAPONS/Sol's Shotgun.png"
+      },
+      {
+        "name": "Red's Pistol",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/WEAPONS/Red's Pistol.png"
+      },
+      {
+        "name": "Aegis Sword",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/WEAPONS/Aegis Sword.png"
+      },
+      {
+        "name": "Red's Love Glove",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/WEAPONS/love glove.png"
+      }
+    ],
+    "APPAREL" : [
+      {
+        "name": "Crew 729 Vault Suit",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/APPAREL/crew 729 vaultsuit.png"
+      }
+    ],
+    "AID" : [
+      {
+        "name": "First Aid Kit",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/AID/first aid.png"
+      }
+    ],
+    "MISC" : [
+      {
+        "name": "Pi Boy BS4 Prototype",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/MISC/pi boi.png"
+      }
+    ],
+    "JUNK" : [
+      {
+        "name": "Literal Junk",
+        "value": "256",
+        "weight": "10",
+        "effect": "75",
+        "icon": "img/ICONS/INV/JUNK/odds and ends.png"
+      }
+    ],
+    "RADIO" : [
+      {
+        "name": "Fallout Classic Radio",
+        "url": "http://46.101.243.245:8000/falloutfm6.ogg",
+        "icon": "img/ICONS/RADIO/classic radio.png"
+      }
+    ]
+  }
 }

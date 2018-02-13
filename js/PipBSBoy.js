@@ -1,5 +1,6 @@
 /// VARIABLE ZONE ///
-var specialJson = "https://raw.githubusercontent.com/SolAZDev/BSPiBoy5/master/js/PipBoyDemo.json";
+var PBJSon = "https://raw.githubusercontent.com/SolAZDev/BSPiBoy5/master/js/PipBoyDemo.json";
+var DefainedJSON = "";
 
 $(document).ready(function () {
     StartUp(1, 1);
@@ -121,9 +122,30 @@ function StartUp(Main, Sub) {
 }
 
 function TestJSON() {
-    $.getJSON(specialJson, function (data) {
+    $.getJSON((DefainedJSON==""?PBJSon:DefainedJSON), function (data) {
         $.each(data.SPECIAL, function (key, val) {
             console.log(val.name + " " + val.value);
+        });
+        $.each(data.PERKS, function (key, val) {
+            console.log(val.name + " " + val.value);
+        });
+        $.each(data.WEAPONS, function (key, val) {
+            console.log(val.name + " " + val.value);
+        });
+        $.each(data.APPAREL, function (key, val) {
+            console.log(val.name + " " + val.value);
+        });
+        $.each(data.AID, function (key, val) {
+            console.log(val.name + " " + val.value);
+        });
+        $.each(data.MISC, function (key, val) {
+            console.log(val.name + " " + val.value);
+        });
+        $.each(data.JUNK, function (key, val) {
+            console.log(val.name + " " + val.value);
+        });
+        $.each(data.RADIO, function (key, val) {
+            console.log(val.name + " " + val.url);
         });
     });
 }
